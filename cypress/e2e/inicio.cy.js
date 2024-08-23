@@ -15,6 +15,7 @@ describe('Página Principal', () => {
   })
   it('Deve renderizar h2 com o texto correto!', () => {
     cy.getByData('2-titulo').contains('Vantagens do nosso banco:')
+    
   })
 })
 
@@ -132,12 +133,13 @@ it('Deve exibir a imagem correta!', () => {
 describe('Página Principal', () => {
   beforeEach( () => {
     cy.visit('http://localhost:3000/')
-  })
+  })})
 it('Deve exibir a imagem correta!', () => {
   cy.getByData('img-5').should('be.visible')
 describe('Página Principal', () => {
   it('Deve renderizar h2 com o texto correto!', () => {
     cy.visit('http://localhost:3000')
     cy.get('[data-test="titulo-principal"]').contains('Experimente mais liberdade no controle da sua vida financeira. Crie sua conta com a gente!')
-  })
+})
+})
 })
